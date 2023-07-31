@@ -35,11 +35,21 @@ function onClickedEstimatePrice() {
         bath: bathrooms,
         location: location.value
     },function(data, status) {
+        if(sqft.value<400)
+    {
+        estPrice.innerHTML = "<h2>" + "Enter value greater than 400sqft" + "</h2>";
+    }
+    else if(sqft.value>10000)
+    {
+        estPrice.innerHTML = "<h2>" + "Enter value smaller than 10000sqft" + "</h2>";
+    }
+    else
+    {
         console.log(data.estimated_price);
         estPrice.innerHTML = "<h2>" + data.estimated_price.toString() + " Lakh</h2>";
         console.log(status);
-    });
-  }
+    }});
+}
 
 function onPageLoad() {
     console.log( "document loaded" );

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel = "stylesheet" href = "login.css">
+  <script type = "module" src = "login.js"></script>
+  <!-- "JS Modules can only be loaded from a web server, so if you 
+    are merely opening the HTML file in your browser directly from your
+    filesystem then the module file won’t load. The Live Server VSCode 
+    extension provides a web server for you so that you can run your HTML 
+    page through it and thus be able to load a module." -->
+</head>
+<body>
+    <div class="img"></div>
+  <div class = "login-container">
+    <div id= "main">
+      <h1 style="text-align:center; padding-right:0px; margin-bottom: 20px;">Sign In</h1>
+      <input id = "email" type = "text" placeholder = "Email" style="margin-top:1px ;"></input>
+      <input id = "password" type = "password" placeholder = "Password"></input>
+      <button id = "submit">Submit</button>
+      <p><span>or</span></p>
+      <button id = "sign-up">Sign Up</button>
+    </div>
+
+    <div id = "create-acct">
+      <h1>Create Account</h1>
+      <input id = "email-signup" type = "text" placeholder = "Email *"></input>
+  <input id = "confirm-email-signup" type = "email" placeholder = "Confirm Email *"></input>
+      <input id = "password-signup" type = "password" placeholder = "Password *"></input>
+      <input id = "confirm-password-signup" type = "password" placeholder = "Confirm Password *"></input>
+      <button id = "create-acct-btn">Create Account</button>
+      <button id = "return-btn">Return to Login</button>
+    </div>
+  </div>
+  
+</body>
+</html>

@@ -107,7 +107,7 @@ h2 {
 		margin: 25px 0 10px;
 		box-sizing: border-box;
 		font-size: 15px;
-		height: 35px;
+		height: wrap;
 		text-align: center;
         border-radius: 10px;
 }
